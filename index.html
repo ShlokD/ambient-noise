@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ambient Noise Machine</title>
+  <link rel="stylesheet" href="dist/style.css">
+  <!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+  <div class="sound-controls">
+    <div class="sound-columns">
+      <div class="sound-control">
+        <img alt="Rainfall sounds" data-icon-name="rain" class="soundicon" src="assets/images/rain.png" />
+        <input data-sound="rain" name="volume" type="range" min="0" max="1" value="0" step="0.01" orient="circular" />
+      </div>
+      <div class="sound-control">
+        <img alt="Dense forest sounds" data-icon-name="forest" class="soundicon" src="assets/images/forest.png" />
+        <input data-sound="forest" name="volume" type="range" min="0" max="1" value="0" step="0.01" />
+      </div>
+      <div class="sound-control">
+        <img alt="Crackling fireplace sounds" data-icon-name="fireplace" class="soundicon" src="assets/images/fireplace.png" />
+        <input data-sound="fireplace" name="volume" type="range" min="0" max="1" value="0" step="0.01" />
+      </div>
+    </div>
+    <div class="sound-columns">
+      <div class="sound-control">
+        <img alt="Ocean waves sounds" data-icon-name="ocean" class="soundicon" src="assets/images/waves.png" />
+        <input data-sound="ocean" name="volume" type="range" min="0" max="1" value="0" step="0.01" />
+      </div>
+      <div class="sound-control">
+        <img alt="Coffeeshop sounds" data-icon-name="coffeeshop" class="soundicon" src="assets/images/coffee.png" />
+        <input data-sound="coffeeshop" name="volume" type="range" min="0" max="1" value="0" step="0.01" />
+      </div>
+      <div class="sound-control">
+        <img alt="Thunder Storm sounds" data-icon-name="thunder" class="soundicon" src="assets/images/lightning.png" />
+        <input data-sound="thunder" name="volume" type="range" min="0" max="1" value="0" step="0.01" />
+      </div>
+    </div>
+  </div>
+
+  <div class="sounds">
+    <audio name="rain" preload="auto" src="assets/sounds/rain.wav" loop="true" autobuffer />
+    <audio name="forest" preload="auto" src="assets/sounds/forest.wav" loop="true" autobuffer />
+    <audio name="fireplace" preload="auto" src="assets/sounds/fireplace.wav" loop="true" autobuffer />
+    <audio name="ocean" preload="auto" src="assets/sounds/ocean.wav" loop="true" autobuffer />
+    <audio name="coffeeshop" preload="auto" src="assets/sounds/coffeeshop.wav" loop="true" autobuffer />
+    <audio name="thunder" preload="auto" src="assets/sounds/thunder.wav" loop="true" autobuffer />
+  <script src="dist/scripts.js"></script>
+</body>
+
+</html>
